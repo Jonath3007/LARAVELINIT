@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/aset/css/styles.css">
+    <title>Login Page</title>
+    @vite('resources/css/app.css')
 </head>
-<body>
-    <div class="ayok">
-        <center>
-    <form id="loginForm">
-        <div>
-            <label for="username">Username : </label>
-            <input type="text" name="username" id="username">
-        </div>
-        <div>
-            <label for="password">Password : </label>
-            <input type="password" name="password" id="password">
-        </div>
-        <button type="submit">LOGIN</button>
-    </center>
-    </form>
-    <script src="aset/js/script.js"></script>
-</div>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-500 to-blue-700">
+    <div class="bg-black rounded-2xl p-8 shadow-2xl w-80">
+        <form class="space-y-6">
+            <div class="space-y-2">
+                <label for="username" class="block text-white font-semibold">Username :</label>
+                <input type="text" id="username" class="w-full px-3 py-2 rounded bg-white" required>
+            </div>
+            
+            <div class="space-y-2">
+                <label for="password" class="block text-white font-semibold">Password :</label>
+                <input type="password" id="password" class="w-full px-3 py-2 rounded bg-white" required>
+            </div>
+            
+            <button type="submit" class="w-24 mx-auto block bg-gray-200 hover:bg-white text-black font-semibold py-1 px-4 rounded">
+                LOGIN
+            </button>
+        </form>
+    </div>
+    <script src="/public/aset/js/script.js"></script>
 </body>
 </html>

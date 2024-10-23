@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event){
 
     if(username === correctUsername && password === correctPassword){
         alert('Login Berhasil');
-        window.location.href = 'index.html';  
+        window.location.href = 'welcome';  
     }else{
         alert('login gagal');
     }
