@@ -33,6 +33,12 @@
                         <img src="/aset/img/KONTAK.png" class="w-20">
                     </a>
                 </li>
+                <li class="flex items-center">
+                <a href="{{ route('about') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">About</a>
+                </li>
+                <li class="flex items-center">
+                <a href="{{ route('login') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">Login</a>
+                </li>
             </ul>
         </div>
         <input type="text" placeholder="Search..." class="border rounded px-4 py-2 text-lg mr-8">
