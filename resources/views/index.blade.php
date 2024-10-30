@@ -7,40 +7,47 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-cover bg-no-repeat" style="background-image: url('/aset/img/BG.jpg');">
-    <nav class="bg-orange-500 flex items-center justify-between p-4 rounded-b-lg">
-        <div class="flex ml-8">
+    <nav class="bg-orange-500 flex items-center p-4 rounded-b-lg">
+        <div class="flex-1 flex items-center space-x-10">
             <a href="index.html">
                 <img src="/aset/img/LOGO2.png" class="w-24">
             </a>
-            <ul class="flex space-x-8 ml-16">
+            <ul class="flex space-x-10 ml-15">
+                <li class="flex items-center">
+                <a href="{{ route('about') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">About</a>
+                </li>
+
+                <li class="flex items-center">
+                <a href="{{ route('login') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">Login</a>
+                </li>
+                </ul>
+                </div>
+
+                <div class="flex-1 flex items-center space-x-10 list-none">
                 <li>
                     <a href="#">
                         <img src="/aset/img/HOME.png" class="w-12">
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="/aset/img/CHART_1.png" class="w-6">
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="/aset/img/KORAN.png" class="w-20">
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="/aset/img/KONTAK.png" class="w-20">
                     </a>
                 </li>
-                <li class="flex items-center">
-                <a href="{{ route('about') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">About</a>
-                </li>
-                <li class="flex items-center">
-                <a href="{{ route('login') }}" class="text-white font-regular mb-4 text transform: text-3xl flex justify-center">Login</a>
-                </li>
-            </ul>
-        </div>
+                </div>
         <input type="text" placeholder="Search..." class="border rounded px-4 py-2 text-lg mr-8">
     </nav>
 

@@ -6,7 +6,16 @@
     <title>Login Page</title>
     @vite('resources/css/app.css')
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-500 to-blue-700">
+<body class="min-h-screen flex-col items-center justify-center bg-gradient-to-b from-blue-500 to-blue-700">
+<nav class="bg-orange-500 w-full py-10 shadow-lg text-yellow-50 flex justify-center top-0">
+  <ul class="flex space-x-8">
+    <li><a href="{{ route('index') }}" class=" text-white font-regular text-3xl flex justify-center">Index</a></li>
+    <li><a href="{{ route('login') }}" class=" text-white font-regular text-3xl flex justify-center">Login</a></li>
+    <li><a href="{{ route('about') }}" class=" text-white font-regular text-3xl flex justify-center">About</a></li>
+    <li></li>
+  </ul>
+  </nav>
+  <div class="flex justify-center min-h-screen items-center">
     <div class="bg-black rounded-2xl p-8 shadow-2xl w-80">
         <form class="space-y-6">
             <div class="space-y-2">
@@ -24,9 +33,7 @@
             </button>
         </form>
     </div>
-    <script src="/public/aset/js/script.js"></script>
-    <div class="mt-6">
-    <a href="{{ route('index') }}" class="text-white font-bold mb-4 text transform: uppercase text-3xl flex justify-center">Index</a>
     </div>
+    <script src="/public/aset/js/script.js"></script>
 </body>
 </html>
